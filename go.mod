@@ -1,3 +1,3 @@
-module get_input
+module go-pkg
 
 go 1.13

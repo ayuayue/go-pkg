@@ -1,9 +1,9 @@
-package get_input
+//Package get-input 用fmt包获取输入的字符或数字,字符不能有空格
+package input_by_fmt
 
 import (
 	"fmt"
 	"strconv"
-	// "strings"
 )
 
 var str string
@@ -11,15 +11,13 @@ var str string
 //GetString 获取字符串
 func GetString(input string) string {
 	n := 1
-	for n == 1{
+	for n == 1 {
 		fmt.Println(input)
 		n, err := fmt.Scanln(&str)
-		fmt.Println(n,str)
+		fmt.Println(n, str)
 		if err == nil {
 			break
 		}
-		// str = strings.Replace(str," ","",-1)
-		// fmt.Println(str)
 
 	}
 	return str

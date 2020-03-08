@@ -2,13 +2,10 @@ package main
 
 import (
 	"fmt"
-	"get_input/get_input"
+	"go-pkg/input"
 )
 
 func main() {
-	str := get_input.GetString("name: ")
-	fmt.Println(str)
-	inter := get_input.GetInt("age: ")
-
-	fmt.Println(inter)
+	str := input.GetString("name: ")
+x	inter := input.GetInt("age: ")
 }
